@@ -170,12 +170,55 @@ export const mockData = {
         skills: ["Game Development", "Localization", "Code Debugging", "JSON", "Multi-language Support"]
       }
     ],
-    education: {
-      degree: "B.Tech (Civil Engineering)",
-      institution: "Indian Institute of Technology Kanpur",
-      year: "2020",
-      gpa: "CGPA: 7.1/10.0"
-    },
+    education: [
+      {
+        year: "2020",
+        level: "Bachelor's Degree",
+        degree: "B.Tech (Civil Engineering)",
+        institution: "Indian Institute of Technology Kanpur",
+        board: "",
+        gpa: "CGPA: 7.1/10.0",
+        awards: []
+      },
+      {
+        year: "2015", 
+        level: "Class XII",
+        degree: "Class XII",
+        institution: "S.H. Intercollege, Tulsia, Kishanganj",
+        board: "BSEB",
+        gpa: "77.4%",
+        awards: [
+          {
+            title: "Pratibha Samman",
+            issuer: "Live Hindustan",
+            date: "Jan 2015",
+            description: "Secured top position in district in Intermediate Exam organised by BSEB"
+          }
+        ]
+      },
+      {
+        year: "2013",
+        level: "Class X", 
+        degree: "Class X",
+        institution: "Bal Mandir Sr. Sec. School, Kishanganj",
+        board: "CBSE",
+        gpa: "10.0/10.0",
+        awards: [
+          {
+            title: "Best Drummer",
+            issuer: "Bal Mandir Senior Secondary School",
+            date: "Jan 2013", 
+            description: "Outstanding performance in school cultural activities"
+          },
+          {
+            title: "Pratibha Samman",
+            issuer: "Prabhat Khabar",
+            date: "Jan 2013",
+            description: "Secured 10 CGPA in Matriculation Exam organised by CBSE"
+          }
+        ]
+      }
+    ],
     achievements: [
       {
         title: "GATE 2024 (Civil)",
@@ -195,6 +238,25 @@ export const mockData = {
       }
     ]
   },
+
+  recommendations: [
+    {
+      name: "Ajish G Habib",
+      title: "Founder & CEO",
+      company: "Tuttifrutti Interactive", 
+      date: "December 15, 2020",
+      relationship: "Ajish G managed Hardik directly",
+      text: "Hardik was a critical member of the 7 bubbling IITK interns, who worked together with us inside the trenches - in one of the most aspiring projects in our lives. Those were tough days with almost negligible light inside the dark tunnel! We were slowly transitioning from a Bootstrapped home-brew village startup to a Infopark IT game studio, and needless to mention these super-charged youngsters were super-critical assets. They altogether delivered amazing results in the digital marketing-engineering assignments, with very little management supervision. Also know Hardik personally as a kind caring human. We would whole-heartedly recommend Hardik to any organisation."
+    },
+    {
+      name: "Huzaifa Kazi",
+      title: "Senior Manager - Digital Marketing", 
+      company: "PROPERTYPISTOL.com",
+      date: "December 1, 2020",
+      relationship: "Huzaifa managed Hardik directly",
+      text: "Hardik has been a great asset for us with his strong analytical and observation skills. He is a great learner and with such composed and focused attitude, he has a great future ahead. I wish him all the best for his future endeavour and he earns my highest recommendation hands down."
+    }
+  ],
 
   contact: {
     email: "rrhrdikh@gmail.com",
