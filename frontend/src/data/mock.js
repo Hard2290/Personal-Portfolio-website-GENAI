@@ -78,8 +78,8 @@ export const mockData = {
           "Blended top 3 regressors for final predictions"
         ],
         technologies: ["Python", "XGBoost", "Random Forest", "Optuna", "Feature Engineering"],
-        github: "https://github.com/Hard2290/housing-prices",
-        kaggle: "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques"
+        github: "https://github.com/Hard2290/House_price_prediction",
+        kaggle: "https://www.kaggle.com/competitions/home-data-for-ml-course/overview"
       },
       {
         title: "Titanic Survival Prediction",
@@ -97,7 +97,7 @@ export const mockData = {
           "Ensembled top 3 classifiers for final submission"
         ],
         technologies: ["Python", "Scikit-learn", "Kernel Ridge", "Feature Engineering", "Ensemble"],
-        github: "https://github.com/Hard2290/titanic-survival",
+        github: "https://github.com/Hard2290/titanic_survived",
         kaggle: "https://www.kaggle.com/competitions/titanic"
       },
       {
@@ -116,8 +116,27 @@ export const mockData = {
           "Tuned XGBoost Regressor via Optuna optimization"
         ],
         technologies: ["Python", "XGBoost", "KMeans", "PCA", "Optuna"],
-        github: "https://github.com/Hard2290/housing-advanced",
+        github: "https://github.com/Hard2290/House_price_prediction_advanced",
         kaggle: "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques"
+      },
+      {
+        title: "Superstore Sales Analytics",
+        platform: "POWER BI",
+        type: "analytics",
+        rank: "Business",
+        total: "Analytics",
+        percentile: "Project",
+        accuracy: "$2.33M",
+        description: "Built interactive dashboard analyzing sales, profit, and returns (2020-2023). Designed KPIs for sales, profit, % returns with comprehensive business insights.",
+        highlights: [
+          "Applied DAX measures for YOY growth and profit margins",
+          "Implemented slicers for region, segment, and product filters",
+          "Derived insights: $2.33M sales (+47%), $292K profit (+49%)",
+          "Identified profitable products (Copiers +$56K) and loss-makers (Tables -$17K)"
+        ],
+        technologies: ["Power BI", "DAX", "Data Analytics", "Business Intelligence", "KPI Design"],
+        github: "https://github.com/Hard2290/superstore_analytics_PowerBI",
+        kaggle: null
       }
     ]
   },
