@@ -60,8 +60,6 @@ const About = ({ data }) => {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </section>
