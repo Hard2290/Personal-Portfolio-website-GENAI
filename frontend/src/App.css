@@ -275,6 +275,28 @@ body {
   animation: pulse 2s infinite;
 }
 
+/* Error */
+.error-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  background-color: var(--color-background);
+  padding: 32px;
+}
+
+.error-content {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  padding: 48px;
+  text-align: center;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
