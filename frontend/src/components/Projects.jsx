@@ -100,6 +100,17 @@ const Projects = ({ data }) => {
                       KAGGLE
                     </a>
                   )}
+                  {!project.kaggle && project.platform === "POWER BI" && (
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary"
+                    >
+                      <ExternalLink size={16} />
+                      DASHBOARD
+                    </a>
+                  )}
                 </div>
               </div>
             );
