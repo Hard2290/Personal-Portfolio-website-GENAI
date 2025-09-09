@@ -74,16 +74,18 @@ const Projects = ({ data }) => {
                     ))}
                   </div>
 
-                  <div className="project-metrics">
-                    <div className="metric">
-                      <div className="metric-value text-regular">{project.accuracy}</div>
-                      <div className="metric-label label-small">SCORE/RMSE</div>
+                  {project.accuracy && project.percentile && (
+                    <div className="project-metrics">
+                      <div className="metric">
+                        <div className="metric-value text-regular">{project.accuracy}</div>
+                        <div className="metric-label label-small">SCORE/RMSE</div>
+                      </div>
+                      <div className="metric">
+                        <div className="metric-value text-regular">Top {project.percentile}%</div>
+                        <div className="metric-label label-small">PERCENTILE</div>
+                      </div>
                     </div>
-                    <div className="metric">
-                      <div className="metric-value text-regular">Top {project.percentile}%</div>
-                      <div className="metric-label label-small">PERCENTILE</div>
-                    </div>
-                  </div>
+                  )}
                 </div>
 
                 <div className="project-actions">
