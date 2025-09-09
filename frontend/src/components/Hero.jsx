@@ -77,16 +77,6 @@ const Hero = ({ data }) => {
               </a>
             </div>
           </div>
-
-          <div className="hero-scroll">
-            <button 
-              className="scroll-indicator"
-              onClick={() => scrollToSection("about")}
-            >
-              <ArrowDown size={24} />
-              <span className="label-small">SCROLL DOWN</span>
-            </button>
-          </div>
         </div>
       </div>
     </section>
