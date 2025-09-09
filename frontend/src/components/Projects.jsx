@@ -36,8 +36,17 @@ const Projects = ({ data }) => {
                     <IconComponent size={24} />
                   </div>
                   <div className="project-rank">
-                    <div className="rank-number text-regular">#{project.rank}</div>
-                    <div className="rank-total label-small">OF {project.total}</div>
+                    {project.type === "analytics" ? (
+                      <>
+                        <div className="rank-number text-regular">#Business</div>
+                        <div className="rank-total label-small">Analytics</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="rank-number text-regular">#{project.rank}</div>
+                        <div className="rank-total label-small">OF {project.total}</div>
+                      </>
+                    )}
                   </div>
                 </div>
 
