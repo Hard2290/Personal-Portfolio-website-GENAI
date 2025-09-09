@@ -840,6 +840,17 @@ body {
   text-align: center;
 }
 
+.education-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .education-card {
   background: var(--bg-white);
   border: 1px solid var(--border-light);
@@ -874,6 +885,61 @@ body {
   gap: 8px;
 }
 
+.awards-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-light);
+}
+
+.awards-title {
+  margin-bottom: 16px;
+  color: var(--accent-primary);
+}
+
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.award-item {
+  padding: 16px;
+  background: var(--color-background);
+  border: 1px solid var(--border-light);
+}
+
+.award-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.award-title {
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.award-issuer {
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+.award-description {
+  color: var(--text-secondary);
+}
+
+.other-achievements {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-light);
+}
+
+.achievements-title {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
 .achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -884,10 +950,97 @@ body {
   padding: 16px;
   border: 1px solid var(--border-light);
   text-align: center;
+  background: var(--bg-white);
 }
 
 .achievement-title {
   margin-bottom: 8px;
+}
+
+/* Recommendations Section */
+.recommendations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.recommendation-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-light);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: transform 0.2s ease;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-2px);
+}
+
+.recommendation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quote-icon {
+  color: var(--accent-primary);
+  opacity: 0.7;
+}
+
+.recommendation-content {
+  flex-grow: 1;
+}
+
+.recommendation-text {
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.recommender-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-light);
+}
+
+.recommender-avatar {
+  background: var(--color-background);
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.recommender-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.recommender-name {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.recommender-company {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.relationship {
+  color: var(--text-secondary);
+  font-style: italic;
 }
 
 /* Contact Section */
