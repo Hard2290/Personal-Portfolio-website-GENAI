@@ -617,11 +617,14 @@ body {
 
 .summary-item .text-big {
   white-space: nowrap;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 .summary-item .label-small {
   white-space: nowrap;
+  font-weight: 600;
 }
 
 /* Projects Section */
