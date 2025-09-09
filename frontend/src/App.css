@@ -450,10 +450,11 @@ body {
 
 /* About Section */
 .about-content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: var(--grid-unit);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   margin-top: 48px;
+  max-width: none;
 }
 
 .about-text {
@@ -473,9 +474,10 @@ body {
 }
 
 .about-highlights {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
+  margin-top: 32px;
 }
 
 .highlight-item {
