@@ -595,20 +595,24 @@ body {
 }
 
 .skills-summary {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
   margin-top: 48px;
   padding: 32px;
   background: var(--bg-white);
   border: 1px solid var(--border-light);
-  flex-wrap: wrap;
+  justify-items: center;
 }
 
 .summary-item {
   text-align: center;
-  min-width: 100px;
-  flex: 1;
+  min-width: 140px;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 /* Projects Section */
