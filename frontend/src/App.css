@@ -615,6 +615,15 @@ body {
   gap: 8px;
 }
 
+.summary-item .text-big {
+  white-space: nowrap;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.summary-item .label-small {
+  white-space: nowrap;
+}
+
 /* Projects Section */
 .projects-grid {
   display: grid;
