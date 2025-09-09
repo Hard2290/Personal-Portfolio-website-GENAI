@@ -592,7 +592,7 @@ body {
 .skills-summary {
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
   margin-top: 48px;
   padding: 32px;
   background: var(--bg-white);
@@ -602,7 +602,8 @@ body {
 
 .summary-item {
   text-align: center;
-  min-width: 120px;
+  min-width: 100px;
+  flex: 1;
 }
 
 /* Projects Section */
