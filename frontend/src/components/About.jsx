@@ -61,29 +61,7 @@ const About = ({ data }) => {
             </div>
           </div>
 
-          <div className="about-stats">
-            <div className="stats-grid">
-              <div className="stat-card">
-                <div className="stat-number text-big">3+</div>
-                <div className="stat-label label">YEARS EXPERIENCE</div>
-              </div>
-              
-              <div className="stat-card">
-                <div className="stat-number text-big">10+</div>
-                <div className="stat-label label">ML PROJECTS</div>
-              </div>
-              
-              <div className="stat-card">
-                <div className="stat-number text-big">5</div>
-                <div className="stat-label label">TOP RANKINGS</div>
-              </div>
-              
-              <div className="stat-card">
-                <div className="stat-number text-big">15+</div>
-                <div className="stat-label label">CERTIFICATIONS</div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
