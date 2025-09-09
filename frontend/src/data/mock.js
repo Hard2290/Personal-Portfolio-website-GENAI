@@ -125,8 +125,8 @@ export const mockData = {
         type: "analytics",
         rank: "Business",
         total: "Analytics",
-        percentile: "Project",
-        accuracy: "$2.33M",
+        percentile: null,
+        accuracy: null,
         description: "Built interactive dashboard analyzing sales, profit, and returns (2020-2023). Designed KPIs for sales, profit, % returns with comprehensive business insights.",
         highlights: [
           "Applied DAX measures for YOY growth and profit margins",
