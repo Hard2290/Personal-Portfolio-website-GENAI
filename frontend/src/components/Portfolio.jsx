@@ -9,23 +9,74 @@ import Recommendations from "./Recommendations";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import GridBackground from "./GridBackground";
-import { mockData } from "../data/mock";
+import { portfolioAPI, handleApiError } from "../services/api";
 
 const Portfolio = () => {
-  const [data, setData] = useState(mockData);
+  const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulate data loading
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000);
+    const fetchPortfolioData = async () => {
+      try {
+        setIsLoading(true);
+        setError(null);
+        
+        // Fetch all portfolio data at once for better performance
+        const portfolioData = await portfolioAPI.getAllData();
+        setData(portfolioData);
+        
+        console.log('Portfolio data loaded successfully');
+      } catch (err) {
+        const errorMessage = handleApiError(err);
+        setError(errorMessage);
+        console.error('Failed to load portfolio data:', err);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchPortfolioData();
   }, []);
 
   if (isLoading) {
     return (
       <div className="loading-container">
         <div className="loading-text">LOADING...</div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="error-container">
+        <div className="error-content">
+          <h1 className="text-big">Oops! Something went wrong</h1>
+          <p className="text-body">{error}</p>
+          <button 
+            className="btn-accent"
+            onClick={() => window.location.reload()}
+          >
+            TRY AGAIN
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!data) {
+    return (
+      <div className="error-container">
+        <div className="error-content">
+          <h1 className="text-big">No Data Available</h1>
+          <p className="text-body">Portfolio data could not be loaded.</p>
+          <button 
+            className="btn-accent"
+            onClick={() => window.location.reload()}
+          >
+            RELOAD
+          </button>
+        </div>
       </div>
     );
   }
