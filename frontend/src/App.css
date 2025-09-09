@@ -1315,6 +1315,29 @@ body {
     grid-template-columns: 1fr;
   }
   
+  .recommendations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .education-timeline {
+    gap: 24px;
+  }
+  
+  .awards-list {
+    gap: 12px;
+  }
+  
+  .award-item {
+    padding: 12px;
+  }
+  
+  .recommender-info {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    text-align: center;
+  }
+  
   .footer-bottom {
     flex-direction: column;
     gap: 16px;
