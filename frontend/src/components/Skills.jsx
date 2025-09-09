@@ -83,6 +83,10 @@ const Skills = ({ data }) => {
             <div className="label-small">DEEP LEARNING</div>
           </div>
           <div className="summary-item">
+            <div className="text-big">PyTorch</div>
+            <div className="label-small">DEEP LEARNING</div>
+          </div>
+          <div className="summary-item">
             <div className="text-big">SQL</div>
             <div className="label-small">DATA QUERYING</div>
           </div>
