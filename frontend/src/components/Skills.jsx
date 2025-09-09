@@ -79,6 +79,10 @@ const Skills = ({ data }) => {
             <div className="label-small">PRIMARY LANGUAGE</div>
           </div>
           <div className="summary-item">
+            <div className="text-big">Scikit-Learn</div>
+            <div className="label-small">MACHINE LEARNING</div>
+          </div>
+          <div className="summary-item">
             <div className="text-big">TensorFlow</div>
             <div className="label-small">DEEP LEARNING</div>
           </div>
