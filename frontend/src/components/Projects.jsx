@@ -131,6 +131,10 @@ const Projects = ({ data }) => {
               <div className="text-big">Top 7%</div>
               <div className="label-small">ADVANCED REGRESSION</div>
             </div>
+            <div className="achievement-item">
+              <div className="text-big">$2.33M</div>
+              <div className="label-small">SALES ANALYTICS</div>
+            </div>
           </div>
           
           <a 
