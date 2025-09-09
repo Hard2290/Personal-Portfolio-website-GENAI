@@ -8,6 +8,8 @@ const Projects = ({ data }) => {
         return Trophy;
       case "prediction":
         return Target;
+      case "analytics":
+        return TrendingUp;
       default:
         return TrendingUp;
     }
