@@ -368,15 +368,18 @@ body {
 }
 
 .hero-content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: var(--grid-unit);
   width: 100%;
+  max-width: none;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  width: 100%;
 }
 
 .hero-subtitle {
@@ -384,7 +387,7 @@ body {
 }
 
 .hero-description {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0;
 }
 
@@ -392,6 +395,8 @@ body {
   display: flex;
   gap: 48px;
   margin: 32px 0;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .stat-item {
