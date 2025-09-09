@@ -61,22 +61,50 @@ const Experience = ({ data }) => {
         <div className="education-section">
           <h3 className="section-subtitle title-big">EDUCATION</h3>
           
-          <div className="education-card">
-            <div className="education-header">
-              <div className="institution-info">
-                <Award size={20} />
-                <div className="institution-details">
-                  <div className="text-regular">{data.education.degree}</div>
-                  <div className="label">{data.education.institution}</div>
+          <div className="education-timeline">
+            {data.education.map((edu, index) => (
+              <div key={index} className="education-item">
+                <div className="education-card">
+                  <div className="education-header">
+                    <div className="institution-info">
+                      <Award size={20} />
+                      <div className="institution-details">
+                        <div className="text-regular">{edu.degree}</div>
+                        <div className="label">{edu.institution}</div>
+                        {edu.board && <div className="label-small">{edu.board}</div>}
+                      </div>
+                    </div>
+                    
+                    <div className="education-meta">
+                      <div className="year label">{edu.year}</div>
+                      <div className="gpa text-regular">{edu.gpa}</div>
+                    </div>
+                  </div>
+
+                  {edu.awards && edu.awards.length > 0 && (
+                    <div className="awards-section">
+                      <div className="awards-title label-small">AWARDS & RECOGNITION</div>
+                      <div className="awards-list">
+                        {edu.awards.map((award, awardIndex) => (
+                          <div key={awardIndex} className="award-item">
+                            <div className="award-header">
+                              <div className="award-title text-body">{award.title}</div>
+                              <div className="award-date label-small">{award.date}</div>
+                            </div>
+                            <div className="award-issuer label-small">Issued by {award.issuer}</div>
+                            <div className="award-description text-body">{award.description}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
-              
-              <div className="education-meta">
-                <div className="year label">{data.education.year}</div>
-                <div className="gpa text-regular">{data.education.gpa}</div>
-              </div>
-            </div>
-
+            ))}
+          </div>
+          
+          <div className="other-achievements">
+            <h4 className="achievements-title text-regular">OTHER ACHIEVEMENTS</h4>
             <div className="achievements-grid">
               {data.achievements.map((achievement, index) => (
                 <div key={index} className="achievement-item">
