@@ -40,6 +40,7 @@ const Portfolio = () => {
         <Skills data={data.skills} />
         <Projects data={data.projects} />
         <Experience data={data.experience} />
+        <Recommendations data={data.recommendations} />
         <Contact data={data.contact} />
       </main>
       <Footer />
